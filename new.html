@@ -46,6 +46,8 @@ details[open] .plus{transform:rotate(45deg)}
 .pain p{margin:0;color:#4B5563}
 .role{border:1px solid #E5E7EB;border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:10px;background:#fff}
 .role h3{margin:0;font-family:Manrope,sans-serif;font-weight:800;font-size:20px}
+.ric{width:44px;height:44px;border-radius:12px;background:#FCE7F3;color:#BE185D;display:flex;align-items:center;justify-content:center}.ric svg{width:22px;height:22px}
+.why{display:flex;gap:12px;align-items:flex-start;background:#111827;border:1px solid #374151;border-radius:14px;padding:14px 16px;color:#E5E7EB;font-size:15px;line-height:1.5}.whyst{flex-shrink:0;background:#3B1729;color:#F9A8D4;font-weight:700;font-size:12px;border-radius:8px;padding:3px 9px;margin-top:2px}
 .role ul{margin:0;padding-left:20px;color:#4B5563}
 .feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .feat div{display:flex;gap:10px;align-items:flex-start;padding:14px 16px;border:1px solid #E5E7EB;border-radius:14px;background:#fff;font-size:15px}
@@ -117,7 +119,7 @@ details[open] .plus{transform:rotate(45deg)}
 <div class="ph"><div class="phone"><img src="/img/today.jpg" alt="Η οθόνη Σήμερα του Kalenda" loading="lazy" width="403" height="870"></div></div>
 </div><div class="step rev">
 <div class="txt"><span class="when">🗓️ Όλη μέρα · Πρόγραμμα</span><h3>Όλο το πρόγραμμα, ανά τεχνίτρια</h3><p>Κάθε τεχνίτρια στη δική της στήλη και τα κενά να φαίνονται καθαρά. Ένα πάτημα σε ένα κενό και κλείνεις νέο ραντεβού, χωρίς διπλοκρατήσεις και χωρίς σβησίματα.</p><div class="tags"><span>Στήλη ανά τεχνίτρια</span><span>Κενά με μια ματιά</span><span>Σήμανση online κράτησης</span></div></div>
-<div class="ph"><div class="phone"><img src="/img/day.jpg" alt="Το ημερήσιο πρόγραμμα ανά τεχνίτρια" loading="lazy" width="403" height="870"></div></div>
+<div class="ph"><div class="phone"><img src="/img/day.jpg?v=2" alt="Το ημερήσιο πρόγραμμα ανά τεχνίτρια" loading="lazy" width="403" height="870"></div></div>
 </div><div class="step">
 <div class="txt"><span class="when">📱 Μεσημέρι · Σελίδα κρατήσεων</span><h3>Η πελάτισσα κλείνει μόνη της</h3><p>Ενώ εσύ δουλεύεις, η πελάτισσα ανοίγει τον σύνδεσμό σου από το Instagram ή το Google. Βλέπει μόνο τις ώρες που είναι πραγματικά διαθέσιμες, διαλέγει υπηρεσία και τεχνίτρια, και το ραντεβού μπαίνει κατευθείαν στο πρόγραμμά σου.</p><div class="tags"><span>Μόνο διαθέσιμες ώρες</span><span>Χωρίς λογαριασμό</span><span>Στο στυλ του μαγαζιού σου</span></div></div>
 <div class="ph"><div class="phone"><img src="/img/booking.jpg" alt="Η σελίδα online κρατήσεων" loading="lazy" width="403" height="870"></div></div>
@@ -137,11 +139,13 @@ details[open] .plus{transform:rotate(45deg)}
 <div class="k-wrap" style="padding-top:80px;padding-bottom:80px;display:flex;flex-wrap:wrap;align-items:center;gap:48px">
 <div style="flex:999 1 420px;min-width:0;display:flex;flex-direction:column;gap:16px">
 <span class="when" style="background:#3B1729;color:#F9A8D4">👥 Πελάτισσες</span>
-<h2 class="k-h2" style="color:#fff">Ξέρεις ποια πελάτισσα να πάρεις τηλέφωνο</h2>
-<p class="k-lead" style="color:#D1D5DB">Το Kalenda οργανώνει μόνο του τις πελάτισσές σου σε ομάδες: τακτικές, νέες, όσες άργησαν να ξανάρθουν, όσες χάθηκαν. Ένα μήνυμα τη σωστή στιγμή φέρνει πίσω πελάτισσες που αλλιώς θα είχες χάσει.</p>
-<div class="tags"><span style="background:#374151;color:#fff">★ VIP</span><span style="background:#374151;color:#fff">Τακτικές</span><span style="background:#374151;color:#fff">Νέες</span><span style="background:#3B1729;color:#F9A8D4">Χάθηκαν</span><span style="background:#3B1729;color:#F9A8D4">Γενέθλια σύντομα</span><span style="background:#374151;color:#fff">No-show</span></div>
+<h2 class="k-h2" style="color:#fff">Ξέρεις ποια πελάτισσα να πάρεις τηλέφωνο. Και γιατί.</h2>
+<p class="k-lead" style="color:#D1D5DB">Το Kalenda μαθαίνει τον ρυθμό κάθε πελάτισσας. Από το ιστορικό της υπολογίζει κάθε πόσες μέρες έρχεται και σε ειδοποιεί όταν αργεί. Σου δείχνει ακόμα ποιες δεν ήρθαν στο ραντεβού τους και ποιες δεν επέστρεψαν μετά την πρώτη επίσκεψη. Έτσι ξέρεις σε ποια αξίζει ένα τηλέφωνο, και γιατί.</p>
+<div class="why"><span class="whyst">Άργησε</span><span>«Έρχεται κάθε ~21 μέρες και έχουν περάσει 34 χωρίς νέο ραντεβού. Καλή στιγμή για τηλέφωνο.»</span></div>
+<p style="margin:0;color:#9CA3AF;font-size:15px">Ένα μήνυμα τη σωστή στιγμή φέρνει πίσω πελάτισσες που αλλιώς θα είχες χάσει.</p>
+<div class="tags"><span style="background:#374151;color:#fff">★ VIP</span><span style="background:#374151;color:#fff">Τακτικές</span><span style="background:#374151;color:#fff">Νέες</span><span style="background:#3B1729;color:#F9A8D4">Άργησαν</span><span style="background:#3B1729;color:#F9A8D4">Χάθηκαν</span><span style="background:#374151;color:#fff">Δεν επέστρεψαν</span><span style="background:#3B1729;color:#F9A8D4">Γενέθλια σύντομα</span><span style="background:#374151;color:#fff">No-show</span></div>
 </div>
-<div style="flex:1 1 280px;display:flex;justify-content:center"><div class="phone" style="border-color:#374151"><img src="/img/clients.jpg" alt="Πελάτισσες σε κατηγορίες" loading="lazy" width="403" height="870"></div></div>
+<div style="flex:1 1 280px;display:flex;justify-content:center"><div class="phone" style="border-color:#374151"><img src="/img/clients.jpg?v=2" alt="Πελάτισσες σε κατηγορίες" loading="lazy" width="403" height="870"></div></div>
 </div>
 </section>
 
@@ -151,9 +155,9 @@ details[open] .plus{transform:rotate(45deg)}
 <p class="k-lead" style="max-width:640px">Εσύ αποφασίζεις ποιος βλέπει τι. Οι πελάτισσες και τα οικονομικά σου μένουν δικά σου.</p>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
-<div class="role"><h3>👑 Ιδιοκτήτρια</h3><ul><li>Όλα τα καταστήματα</li><li>P&amp;L, έξοδα, νεκρό σημείο</li><li>Ομάδα, δικαιώματα, ρυθμίσεις</li></ul></div>
-<div class="role"><h3>💁‍♀️ Γραμματεία</h3><ul><li>Ραντεβού και επιβεβαιώσεις</li><li>Πελάτισσες και αναμονή</li><li>Ταμείο ημέρας</li></ul></div>
-<div class="role"><h3>💅 Τεχνίτρια</h3><ul><li>Μόνο το δικό της πρόγραμμα</li><li>Χωρίς τηλέφωνα πελατισσών</li><li>Χωρίς οικονομικά στοιχεία</li></ul></div>
+<div class="role"><div class="ric"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div><h3>Ιδιοκτήτρια</h3><ul><li>Όλα τα καταστήματα</li><li>P&amp;L, έξοδα, νεκρό σημείο</li><li>Ομάδα, δικαιώματα, ρυθμίσεις</li></ul></div>
+<div class="role"><div class="ric"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div><h3>Γραμματεία</h3><ul><li>Ραντεβού και επιβεβαιώσεις</li><li>Πελάτισσες και αναμονή</li><li>Ταμείο ημέρας</li></ul></div>
+<div class="role"><div class="ric"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96l-6.14 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/></svg></div><h3>Τεχνίτρια</h3><ul><li>Μόνο το δικό της πρόγραμμα</li><li>Χωρίς τηλέφωνα πελατισσών</li><li>Χωρίς οικονομικά στοιχεία</li></ul></div>
 </div>
 </section>
 
